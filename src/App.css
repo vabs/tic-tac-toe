@@ -1,0 +1,35 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: bisque;
+  border-radius: 50px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square.disabled {
+  background-color: gray; 
+}
+
+.square.disabled:hover {
+  background-color: gray;
+}
+
+.square:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+}

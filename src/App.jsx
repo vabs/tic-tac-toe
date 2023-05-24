@@ -54,9 +54,9 @@ function App() {
     // check column
     for (let row = 0; row < currentState.length; row++) {
       if (
-        currentState[row][0] !== "" &&
-        currentState[row][0] === currentState[row + 1][0] &&
-        currentState[row + 1][0] === currentState[row + 1][0]
+        currentState[0][row] !== "" &&
+        currentState[0][row] === currentState[1][row] &&
+        currentState[1][row] === currentState[2][row]
       ) {
         return true;
       }
